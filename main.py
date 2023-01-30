@@ -48,8 +48,8 @@ with open(f'{file_name[:-5]}_obf.json', 'w', encoding='utf-8') as file:
     json.dump(data, file, indent=4)
 
 # Save the name map to a new file
-with open(f'nametranslation_{file_name[:-5]}.txt', 'w') as file:
+with open(f'{file_name[:-5]}_nametranslation.txt', 'w') as file:
     file.write(json.dumps(name_map, indent=4))
 
 print(f"{file_name} has been obfuscated and saved as '{file_name[:-5]}_obf.json'")
-print(f"Nametranslation has been generated and saved as 'nametranslation_{file_name[:-5]}.txt'")
+print(f"Nametranslation has been generated and saved as '{file_name[:-5]}_nametranslation.txt'")
